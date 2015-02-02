@@ -225,7 +225,7 @@ app.get('/khashayar',function(req,res){
       if(req.session.counter){
         req.session.counter++;
       }else{
-        req.session.counter=0;
+        req.session.counter=1;
       }
       res.send("Current Counter Value Of Your Session is "+req.session.counter);
 });
