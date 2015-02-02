@@ -1,0 +1,8 @@
+{
+  "name": "redis-session-middleware",
+  "version": "0.0.1",
+    "dependencies":{
+        "express-session":"1.x",
+        "connect-redis":"2.x"
+    }
+}
