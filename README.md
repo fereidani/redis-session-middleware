@@ -10,8 +10,8 @@ clone project in it .
 go to directory and run npm install .
 
 ##### if you use Kraken :
-1. open to config/config.json
-2. replace old session part or add a following part to "middleware" key :
+1. open `config/config.json`
+2. replace old `session` part or add a following part to "middleware" index :
 ```
         "session": {
             "module": {
