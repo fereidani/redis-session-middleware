@@ -1,5 +1,5 @@
 # redis-session-middleware
-Krakenjs/Expressjs express-session redis middleware
+Krakenjs/Expressjs redis session middleware
 
 The "redis-session-middleware" is a middleware for Expressjs 4.x/Kraken 1.x to use express-session with redis compatibility .
 
