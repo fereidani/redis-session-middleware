@@ -27,7 +27,6 @@ function cp(from,to){
     if(from!=undefined && from instanceof Object){
         for(var index in from){
             to[index]=from[index];
-            console.log(to);
         }
     }
 }
@@ -36,7 +35,6 @@ module.exports=function(sessionSettings,redisSettings,middlewareSettings) {
     cp(middlewareSettings,settings)
     cp(sessionSettings, finalSessionSettings);
     cp(redisSettings, finalRedisSettings);
-    console.log(finalRedisSettings);
     finalSessionSettings.store = new store(finalRedisSettings);
     var sessionHandler = session(finalSessionSettings);
     return function (req, res, next) {
